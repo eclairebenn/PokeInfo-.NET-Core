@@ -1,0 +1,15 @@
+<img class="sprite" src=@ViewBag.sprite  alt="Sprite">
+<h2>Name : @ViewBag.name</h2>
+<h2>Types : </h2>
+@{
+    foreach(string type in ViewBag.type)
+    {
+        <h4>@type</h4>
+    }
+}
+
+<h2>Height : @ViewBag.height</h2>
+<h2>Weight : @ViewBag.weight</h2>
+
+
+
